@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: rgb(43, 43, 49);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-info {
+            flex-grow: 1;
+            padding: 0 20px;
+        }
+        .product-info h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .product-info p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .pay-button {
+            display: block;
+            width: 150px;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #ff6347;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .pay-button:hover {
+            background-color: #e5533f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Vintage & Co 🛒</h1>
+    </header>
+    <div class="container">
+        <div class="product">
+            <img src="img/imagen jarron.jpg" alt="Jarrón decorativo">
+            <div class="product-info">
+                <h3>Jarrón decorativo</h3>
+                <p>Jarrón vintage bohemio.</p>
+            </div>
+            <span class="product-price">$64,000</span>
+        </div>
+        <div class="product">
+            <img src="img/fondo.jpg" alt="Cuadro decorativo">
+            <div class="product-info">
+                <h3>Cuadro decorativo</h3>
+                <p>Lienzo moderno.</p>
+            </div>
+            <span class="product-price">$40,000</span>
+        </div>
+        <div class="product">
+            <img src="img/espejo.jpg" alt="Espejo decorativo">
+            <div class="product-info">
+                <h3>Espejo decorativo</h3>
+                <p>Espejo Imperial Dorado.</p>
+            </div>
+            <span class="product-price">$78,000</span>
+        </div>
+        <div class="total">Total: $182,000</div>
+        <button class="pay-button" onclick="alert('Gracias por tu compra!')">Pagar</button>
+    </div>
+</body>
+</html>
